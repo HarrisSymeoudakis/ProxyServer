@@ -1,2 +1,0 @@
-[build]
-  command = "npm init -y && npm install express http-proxy-middleware && npm install cores && node proxy-server.js"
