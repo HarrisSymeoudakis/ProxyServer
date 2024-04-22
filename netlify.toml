@@ -1,3 +1,4 @@
 [build]
-  command = "npm init -y && npm install express http-proxy-middleware && npm install cores && node proxy-server.js"
+  command = "npm init -y && npm install express http-proxy-middleware && npm install cores && npm start"
   publish = "ProxyServer"
+  command = "node proxy-server.js"
