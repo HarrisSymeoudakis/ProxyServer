@@ -2,13 +2,6 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const cors = require('cors');
 const app = express();
-
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); // Update * to your specific origin if needed
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
 app.use(cors());
 
 const target = 'https://retail-services.cegid.cloud';
