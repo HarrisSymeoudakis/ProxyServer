@@ -6,7 +6,8 @@ app.use(cors());
 
 const target = 'https://retail-services.cegid.cloud';
 app.use((req, res, next) => { 
-    console.log('Incoming request: ${req.method} ${req.url}'); 
+    //console.log('Incoming request: ${req.method} ${req.url}'); 
+    console.log('Incoming request: ${req.body}'); 
     next(); 
 });
 const proxyMiddleware = createProxyMiddleware({
